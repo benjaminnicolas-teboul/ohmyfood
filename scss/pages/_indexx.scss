@@ -1,0 +1,34 @@
+@use "../abstracts" as *;
+
+.restaurants{
+    padding:40px 20px;
+    background-color:$secundary-bg-color ;
+.restaurant-card {
+    display: flex;
+    flex-direction: column;
+    gap:18px;
+}
+i{font-size: 23px;
+  padding: 15px 20px 0;
+}
+}
+.card-title {
+        font-size: 19px;
+        padding: 10px 10px 0;
+      }
+.card-subtitle{
+    padding: 0 10px;
+    font-size: 19px;
+}
+.restaurants-title{
+    margin-bottom: 20px;
+}
+.fonction.button{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+ 
+}
+.fonction ul{
+    margin: 30px 0 50px;
+}

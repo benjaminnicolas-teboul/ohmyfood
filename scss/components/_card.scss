@@ -1,0 +1,23 @@
+@use "../abstracts" as *;
+     .card {
+        background-color: $primary-bg-color;
+        border-radius: 20px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+        width: 340px;
+        height: 250px;
+        img {
+            object-fit: cover;
+            height: 180px;
+            width: 100%;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;;
+        }
+
+        .card-content {
+            display: flex;
+            justify-content: space-between;
+          
+        }
+       
+    }
+    

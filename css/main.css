@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", serif;
+  color: black;
+  text-decoration: none;
+}
+body p a {
+  font-family: "Roboto", serif;
+  color: inherit;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 375px;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  width: 340px;
+  height: 250px;
+}
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 180px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.card .card-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  display: inline-block;
+  background-color: #F3F3F3;
+  color: black;
+  border-radius: 30px;
+  height: 72px;
+  width: 335px;
+  border-width: 2px;
+  box-sizing: border-box;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: auto;
+  font-size: 18px;
+}
+
+.button_purple {
+  background-color: #FF79DA;
+  color: white;
+  height: 50px;
+  width: 218px;
+}
+
+#main-footer {
+  background-color: #353535;
+  color: white;
+}
+#main-footer .img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#main-footer a {
+  color: white;
+}
+
+#main-header img {
+  width: 45%;
+  display: block;
+  margin: 20px auto 15px auto;
+}
+#main-header label {
+  display: none;
+}
+#main-header input[type=text] {
+  text-align: center;
+  height: 50px;
+  width: 100%;
+  color: black;
+  background-color: gray;
+  border: 5px;
+  border-radius: 0px;
+  font-size: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.restaurants {
+  padding: 40px 20px;
+  background-color: #F3F3F3;
+}
+.restaurants .restaurant-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.restaurants i {
+  font-size: 23px;
+  padding: 15px 20px 0;
+}
+
+.card-title {
+  font-size: 19px;
+  padding: 10px 10px 0;
+}
+
+.card-subtitle {
+  padding: 0 10px;
+  font-size: 19px;
+}
+
+.restaurants-title {
+  margin-bottom: 20px;
+}
+
+.fonction.button {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.fonction ul {
+  margin: 30px 0 50px;
+}
+
+/*@use 'themes';
+@use 'utilities';
+@use 'vendors';*//*# sourceMappingURL=main.css.map */

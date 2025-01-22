@@ -1,0 +1,27 @@
+@use "../abstracts" as *;
+.button{
+    display:inline-block;
+    background-color: $secundary-bg-color;
+    color: $txt-color;
+    border-radius:30px;
+    height: 72px;
+    width:335px;
+    border-width: 2px;
+    box-sizing: border-box;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: auto;
+    font-size: 18px;
+    
+}
+
+.button_purple{
+    background-color:$color-secundary;
+    color:$primary-bg-color;
+    height:50px ;
+    width:218px;
+}
+
