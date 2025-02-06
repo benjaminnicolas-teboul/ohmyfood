@@ -81,6 +81,10 @@ i {
   display: flex;
   justify-content: space-between;
 }
+.card .card-check {
+  display: flex;
+  align-items: center;
+}
 
 .button {
   display: inline-block;
@@ -146,6 +150,66 @@ i {
   color: #9356DC;
 }
 
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+  animation: loader-hide 3.5s forwards;
+}
+.loader-overlay::before {
+  content: "Loading...";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60px);
+  text-align: center;
+}
+
+.loader-progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.1);
+}
+.loader-progress::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #9356DC, #FF79DA);
+  animation: loader-fill 3s ease-in-out forwards;
+}
+
+@keyframes loader-fill {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes loader-hide {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 #main-footer {
   background-color: #353535;
   color: white;
@@ -283,21 +347,21 @@ i {
   width: 13%;
 }
 
-#plat-1 {
+#dish-1 {
   padding-top: 15px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-#plat-2 {
+#dish-2 {
   padding-top: 15px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 
-#plat-3 {
+#dish-3 {
   padding-top: 15px;
   display: flex;
   flex-direction: column;
@@ -312,15 +376,15 @@ i {
     opacity: 1;
   }
 }
-#plat-1 {
+#dish-1 {
   animation: fadeIn 1s 500ms forwards;
 }
 
-#plat-2 {
+#dish-2 {
   animation: fadeIn 1s 1000ms forwards;
 }
 
-#plat-3 {
+#dish-3 {
   animation: fadeIn 1s 1500ms forwards;
 }
 

@@ -1,0 +1,55 @@
+@use "../abstracts" as *;
+// Variables
+$loader-duration: 3s;
+
+.loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 9999;
+  animation: loader-hide calc($loader-duration + 0.5s) forwards;
+  
+  &::before {
+    content: 'Loading...';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60px);
+    text-align: center;
+  }
+}
+
+.loader-progress {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 4px;
+  background: rgba(0,0,0,0.1);
+  
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, $color-primary, $color-secondary);
+    animation: loader-fill $loader-duration ease-in-out forwards;
+  }
+}
+
+@keyframes loader-fill {
+  0% { width: 0%; }
+  100% { width: 100%; }
+}
+
+@keyframes loader-hide {
+  0% { opacity: 1; visibility: visible; }
+  90% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}

@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 .button{
     display:inline-block;
-    background-color: $secundary-bg-color;
+    background-color: $secondary-bg-color;
     color: $txt-color;
     border-radius:30px;
     height: 72px;
@@ -39,7 +39,7 @@
     transition-property: transform;
     transition-duration: 2s;
     &:hover {
-       background-color:$color-secundary ;
+       background-color:$color-secondary ;
     }
 }
 

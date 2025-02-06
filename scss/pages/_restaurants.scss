@@ -5,7 +5,7 @@
         height: 275px;
     }
 
-    background-color:$secundary-bg-color;
+    background-color:$secondary-bg-color;
     padding: 30px 15px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
@@ -24,7 +24,7 @@
         padding: 10px;
         align-items: flex-end;
     }
-
+  
 
     i {
         top: 36px;
@@ -48,15 +48,15 @@
 
     }*/
 }
-#plat-1 {
+#dish-1 {
     @include menu-display;
 }
 
-#plat-2 {
+#dish-2 {
     @include menu-display;
 }
 
-#plat-3 {
+#dish-3 {
     @include menu-display;
 }
 
@@ -71,7 +71,7 @@
 
 @for $i from 1 through 3 {
         
-    #plat-#{$i}{
+    #dish-#{$i}{
        $delay:500ms * $i;
         animation: fadeIn 1s $delay forwards;
     }
