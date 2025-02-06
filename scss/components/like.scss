@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+.like-full {
+ opacity: 0;
+ transition-property: all;
+ transition-duration:2s;
+  
+    &:hover{
+      opacity:1;
+      color:#9356DC;
+      
+    }
+  }

@@ -10,18 +10,45 @@
     box-sizing: border-box;
     font-style: normal;
     display: flex;
+    cursor:pointer;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    margin: auto;
+    margin: 18px auto;
     font-size: 18px;
+}
+
+.icon::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
     
+  }
+.iconmobile::before{
+    font: var(--fa-font-solid);
+    content:f3cd;
+    color:$color-form;
+    font-size:22px;
 }
 
 .button_purple{
-    background-color:$color-secundary;
+    background-color:$color-primary;
     color:$primary-bg-color;
     height:50px ;
     width:218px;
+    transition-property: transform;
+    transition-duration: 2s;
+    &:hover {
+       background-color:$color-secundary ;
+    }
 }
 
+.rectangle{
+    background-color:$color-tertiary;
+    color:$secondary-txt-color;
+    height:29px;
+    line-height: 29px;
+    width:80px;
+    text-align: center;
+    font-weight: bold;
+}

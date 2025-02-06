@@ -3,10 +3,10 @@
 #main-footer{
     background-color:$footer-bg-color ;
     color:$primary-bg-color;
-    .img{
-        object-fit: cover;
-    }
     a{
         color:$primary-bg-color;
+    }
+    ul{
+       margin: 20px; 
     }
 }

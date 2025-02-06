@@ -1,0 +1,7 @@
+@mixin menu-display{
+    padding-top: 15px;
+    display:flex;
+    flex-direction: column;
+    gap:12px;
+}
+

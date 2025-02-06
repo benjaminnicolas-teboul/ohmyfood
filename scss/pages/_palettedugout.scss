@@ -1,0 +1,81 @@
+@use "../abstracts" as *;
+
+#menu {
+    img {
+        height: 275px;
+    }
+
+    background-color:$secundary-bg-color;
+    padding: 30px 15px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position:relative;
+    bottom: 50px;
+
+    section {
+        padding-top: 30px;
+    }
+
+    .card {
+        height: 72px;
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: flex-end;
+    }
+
+
+    i {
+        top: 36px;
+        right: 40px;
+        font-size: 23px;
+    }
+
+    .title-underscored {
+
+        border-bottom: solid 3px $color-tertiary;
+        padding-bottom: 4px;
+        border-bottom-left-radius: 3px;
+        display: block;
+        width: 13%;
+
+    }
+
+    /*.menu-card {
+        opacity: 0;
+        
+
+    }*/
+}
+#plat-1 {
+    @include menu-display;
+}
+
+#plat-2 {
+    @include menu-display;
+}
+
+#plat-3 {
+    @include menu-display;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@for $i from 1 through 3 {
+        
+    #plat-#{$i}{
+       $delay:500ms * $i;
+        animation: fadeIn 1s $delay forwards;
+    }
+    
+  }
+
+

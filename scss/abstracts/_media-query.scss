@@ -1,0 +1,33 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+@media (min-width: $minwidth-desktop) {
+    .main-container {
+        max-width: $maxwidth-desktop;
+    }
+    #main-header{
+        img {
+            width:15%;
+        }
+    }
+    .fonction {
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 25px;
+        }
+    }
+
+    .restaurant-card {
+        .card {
+            width: 500px;
+        }
+    }
+
+    .restaurants {
+        .restaurant-card {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
