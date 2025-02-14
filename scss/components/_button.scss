@@ -1,54 +1,63 @@
 @use "../abstracts" as *;
-.button{
-    display:inline-block;
-    background-color: $secondary-bg-color;
-    color: $txt-color;
-    border-radius:30px;
-    height: 72px;
-    width:335px;
-    border-width: 2px;
-    box-sizing: border-box;
-    font-style: normal;
-    display: flex;
-    cursor:pointer;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    margin: 18px auto;
+
+.button {
+  display: inline-block;
+  background-color: $secondary-bg-color;
+  color: $txt-color;
+  border-radius: 22px;
+  height: 80px;
+  width: 335px;
+  border-width: 2px;
+  box-sizing: border-box;
+  font-style: normal;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 18px auto;
+  font-size: 20px;
+  font-weight: bold;
+
+  &_purple {
     font-size: 18px;
+    background-color: $color-primary;
+    color: $primary-bg-color;
+    height: 50px;
+    width: 218px;
+    transition-property: transform;
+    transition-duration: 2s;
+
+    &:hover {
+      background-color: $color-secondary ;
+    }
+    
+  }
+  &_smaller{
+    width: 195px;
+  }
 }
 
 .icon::before {
-    display: inline-block;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    
-  }
-.iconmobile::before{
-    font: var(--fa-font-solid);
-    content:f3cd;
-    color:$color-form;
-    font-size:22px;
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+
 }
 
-.button_purple{
-    background-color:$color-primary;
-    color:$primary-bg-color;
-    height:50px ;
-    width:218px;
-    transition-property: transform;
-    transition-duration: 2s;
-    &:hover {
-       background-color:$color-secondary ;
-    }
+.iconmobile::before {
+  font: var(--fa-font-solid);
+  content: f3cd;
+  color: $color-form;
+  font-size: 22px;
 }
 
-.rectangle{
-    background-color:$color-tertiary;
-    color:$secondary-txt-color;
-    height:29px;
-    line-height: 29px;
-    width:80px;
-    text-align: center;
-    font-weight: bold;
+.rectangle {
+  background-color: $color-tertiary;
+  color: $secondary-txt-color;
+  height: 29px;
+  line-height: 29px;
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
 }

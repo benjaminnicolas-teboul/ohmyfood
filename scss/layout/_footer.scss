@@ -1,12 +1,25 @@
 @use "../abstracts" as *;
 
-#main-footer{
+.main-footer{
+    
+    padding:20px;
     background-color:$footer-bg-color ;
+    h2{
+        font-size:24px;
+        margin-bottom: 20px;
+    }
     color:$primary-bg-color;
     a{
         color:$primary-bg-color;
     }
     ul{
-       margin: 20px; 
+       margin-top: 12px; 
+    }
+    li{
+        margin-bottom: 5px;
+    }
+    i{
+      position:initial;
+      font-size:13px;
     }
 }

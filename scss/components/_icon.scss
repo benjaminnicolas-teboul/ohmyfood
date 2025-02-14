@@ -1,0 +1,12 @@
+@use "../abstracts" as *;
+
+.circle{
+    width:24px;
+    height:24px;
+    border-radius:50px;
+    color:$primary-bg-color;
+    background-color: $color-primary;
+    padding: 1px 2px 0px 7px;
+    position:absolute;
+    left: -5px;
+}

@@ -2,32 +2,116 @@
 @use "mixins" as *;
 
 @media (min-width: $minwidth-desktop) {
-    .main-container {
+    body .main-container {
         max-width: $maxwidth-desktop;
     }
-    #main-header{
-        img {
-            width:15%;
+
+    #main-header {
+        @include img-header-setup-destop;
+        i{left: 280px;}
+    }
+    #secundary-header {
+        @include img-header-setup-destop;
+    }
+    #explore{
+        h1{
+            font-size: 40px;
+            margin-bottom: 25px;
+        }
+        p{
+            font-size: 20px;
         }
     }
     .fonction {
+        h2{
+            margin-right: 50px;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         ul {
             display: flex;
-            flex-direction: row;
             gap: 25px;
+            
         }
-    }
+    } 
 
-    .restaurant-card {
-        .card {
-            width: 500px;
-        }
-    }
-
-    .restaurants {
+    #restaurants {
+        padding:30px 50px;
         .restaurant-card {
-            flex-direction: row;
-            flex-wrap: wrap;
+          display:grid;
+          grid-template-columns: 50% 50%;
+          grid-template-rows: auto;
+          justify-items: center;
+          
+  }
+            .card{
+                width: 500px;
+                margin-top:20px;
+            }
+        }
+    
+        .image-fit{
+            width: 100%;
+            height: 383px;
+            object-fit: cover;
+          }
+          @for $i from 1 through 3 {
+        
+            #dish-#{$i}{
+               @include align-dish-center;
+            }
+        }
+    #menu {
+        width: 73%;
+        margin: 0 auto;
+        .menu-card{
+        .card {
+            width: 700px;
+        }
+
+    }
+    h1{
+        text-align: center;
+    }
+
+        .title-underscored {
+            width: 4%;
+          }
+          i{
+            top: 73px;
+            right: 248px;
+            font-size:25px;
+          }
+    }
+    #main-footer{
+        
+        h2 {
+            margin: 0;
+            font-size: 22px;
+            margin-top: 6px;
+            margin-left:35px;
+          }
+        nav{
+            margin-top: 30px;
+            ul{
+                display: flex;
+                justify-content:flex-end;
+                li{
+                    margin-right: 25px;
+                }
+            }
+            display:flex;
+            flex-direction: row-reverse;
+       
         }
     }
+    section{
+    .button_smaller{
+        margin-top: 40px;
+    }
+}
+.footer-restaurant{
+    margin-top: -50px;
+}
 }

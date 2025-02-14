@@ -5,3 +5,21 @@
     gap:12px;
 }
 
+@mixin img-header-setup{
+    img {
+        width:50%;
+        display: block;
+        margin: 20px auto 15px auto;  
+    }
+}
+@mixin img-header-setup-destop{
+        img {
+            width: 14%;
+        
+        }
+}
+@mixin align-dish-center{
+    width: fit-content; 
+    margin-left: auto;
+   margin-right: auto;
+}

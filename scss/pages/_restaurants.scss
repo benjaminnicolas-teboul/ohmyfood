@@ -1,9 +1,25 @@
 @use "../abstracts" as *;
-
+.menu{
+  i {
+    top: 55px;
+    right: 40px;
+    font-size: 23px;
+  }
+}
 #menu {
-    img {
-        height: 275px;
-    }
+    h2{
+    padding-top: 25px;
+    font-weight: normal;
+  font-size: 21px;
+}
+h1{
+  margin-top: 35px;
+  font-size: 31px;
+  font-style: italic;
+}
+p{
+  font-weight: normal;
+}
 
     background-color:$secondary-bg-color;
     padding: 30px 15px;
@@ -11,27 +27,77 @@
     border-top-right-radius: 40px;
     position:relative;
     bottom: 50px;
-
-    section {
-        padding-top: 30px;
-    }
-
+  
     .card {
         height: 72px;
         width: 350px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 10px;
         align-items: flex-end;
+        position: relative;
+        overflow: hidden;  
+        padding: 15px;
+        transition: all 0.3s ease;
+      
+        &-txt {
+          width:100%;
+          transition: width 0.3s ease;
+      
+          h3, p {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      
+        &-price {
+          margin-left: 15px;
+          transition: transform 0.3s ease;
+          font-weight: bold;
+        }
+      
+        &-check {
+          position: absolute;
+          top: 0;
+          right: -60px;
+          width: 60px;
+          height: 100%;
+          background-color: $color-tertiary;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: transform 0.3s ease;
+      
+          i {
+            color: white;
+            font-size: 20px;
+              top: 25px;
+              right: 22px;
+            
+          }
+
+        }
+      
+        &:hover {
+          .card-check {
+            transform: translateX(-60px);
+          }
+      
+          .card-txt {
+            width: calc(100% - 90px);
+            
+          }
+      
+          .card-price {
+            transform: translateX(-50px);
+          }
+        }
+      }
+     
     }
   
-
-    i {
-        top: 36px;
-        right: 40px;
-        font-size: 23px;
-    }
-
     .title-underscored {
 
         border-bottom: solid 3px $color-tertiary;
@@ -42,14 +108,12 @@
 
     }
 
-    /*.menu-card {
-        opacity: 0;
-        
 
-    }*/
-}
+
+
 #dish-1 {
     @include menu-display;
+  
 }
 
 #dish-2 {
@@ -68,7 +132,12 @@
         opacity: 1;
     }
 }
-
+@for $i from 1 through 3 {
+        
+    #dish-#{$i}{
+       opacity:0;
+    }
+}
 @for $i from 1 through 3 {
         
     #dish-#{$i}{
@@ -77,5 +146,7 @@
     }
     
   }
+     
+  
 
-
+  

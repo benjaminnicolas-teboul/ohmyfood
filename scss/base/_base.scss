@@ -7,13 +7,13 @@
     box-sizing: border-box;
 }
 body {
+    h1, h2, h3{
     font-family: $primary-font;
+}
     font-size: $myFontSize;
     color:$txt-color;
-    p a{
-        font-family: $secundary-font;
-        color:inherit;
-    }
+    font-family: $secundary-font;
+    color:inherit;
     }
 
 

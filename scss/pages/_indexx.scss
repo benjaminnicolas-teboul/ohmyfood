@@ -4,22 +4,39 @@
     padding: 40px 20px;
     background-color: $secondary-bg-color ;
     text-align: center;
-    
+    h1{
+        margin-bottom: 15px;
+    }
+    p{
+        margin-bottom:30px ;
+    }
 }
 
 .fonction {
-    margin-top: 30px;
+    margin-top: 40px;
     padding:0 20px;
     .button{
         display:flex;
         gap:18px;
     }
+    i{
+        color:grey;
+        left: 36px;
+    }
+    .direction-row{
+        align-items: center;
+        justify-content: space-around;
+        position:relative;
+    }
+    ul {
+        margin: 10px 0 40px;
+    }
 }
 
 .restaurants {
-    padding: 40px 20px;
+    padding: 55px 20px 65px;
     background-color: $secondary-bg-color ;
-
+    box-sizing:border-box;
     .restaurant-card {
         display: flex;
         flex-direction: column;
@@ -53,13 +70,8 @@
     margin-bottom: 20px;
 }
 
-.fonction.button {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
 
-}
 
-.fonction ul {
-    margin: 30px 0 50px;
+.changetomaincolor i{
+    color: $color-primary;
 }
