@@ -34,7 +34,8 @@
             gap: 25px;
             justify-content: center;
             width: 100%;
-        }
+        } 
+        
     } 
 
     #restaurants {
@@ -63,6 +64,11 @@
                @include align-dish-center;
             }
         }
+        main #menu i{
+            top: 73px;
+            right: 248px;
+            font-size:25px;
+          }
     #menu {
         width: 73%;
         margin: 0 auto;

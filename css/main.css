@@ -69,6 +69,11 @@
     margin-left: auto;
     margin-right: auto;
   }
+  main #menu i {
+    top: 73px;
+    right: 248px;
+    font-size: 25px;
+  }
   #menu {
     width: 73%;
     margin: 0 auto;
@@ -466,10 +471,10 @@ main {
   color: #9356DC;
 }
 
-.menu i {
-  top: 55px;
+#menu i {
+  top: 74px;
   right: 40px;
-  font-size: 23px;
+  font-size: 27px;
 }
 
 #menu {

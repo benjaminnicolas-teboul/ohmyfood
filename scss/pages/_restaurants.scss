@@ -1,9 +1,9 @@
 @use "../abstracts" as *;
-.menu{
+#menu{
   i {
-    top: 55px;
-    right: 40px;
-    font-size: 23px;
+    top: 74px;
+  right: 40px;
+  font-size: 27px;
   }
 }
 #menu {
@@ -135,9 +135,12 @@ p{
 @for $i from 1 through 3 {
         
     #dish-#{$i}{
+      
        opacity:0;
+       
     }
 }
+
 @for $i from 1 through 3 {
         
     #dish-#{$i}{
