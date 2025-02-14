@@ -18,17 +18,19 @@
   #explore p {
     font-size: 20px;
   }
-  .fonction {
+  #functioning {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
-  .fonction h2 {
-    margin-right: 50px;
+  #functioning h2 {
+    margin-left: 170px;
   }
-  .fonction ul {
+  #functioning ul {
     display: flex;
     gap: 25px;
+    justify-content: center;
+    width: 100%;
   }
   #restaurants {
     padding: 30px 50px;
