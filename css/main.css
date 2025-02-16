@@ -224,18 +224,6 @@ main {
   width: 195px;
 }
 
-.icon::before {
-  display: inline-block;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-}
-
-.iconmobile::before {
-  font: var(--fa-font-solid);
-  content: f3cd;
-  color: #EAEAEA;
-  font-size: 22px;
-}
 
 .rectangle {
   background-color: #99E2D0;
@@ -593,13 +581,46 @@ main {
 #dish-1 {
   opacity: 0;
 }
+#dish-1 h2 {
+  opacity: 1;
+}
+
+#dish-1 {
+  animation: fadeIn 1s 500ms forwards;
+}
+
+#dish-2 {
+  animation: fadeIn 1s 1000ms forwards;
+}
+
+#dish-3 {
+  animation: fadeIn 1s 1500ms forwards;
+}
 
 #dish-2 {
   opacity: 0;
 }
+#dish-2 h2 {
+  opacity: 1;
+}
+
+#dish-1 {
+  animation: fadeIn 1s 500ms forwards;
+}
+
+#dish-2 {
+  animation: fadeIn 1s 1000ms forwards;
+}
+
+#dish-3 {
+  animation: fadeIn 1s 1500ms forwards;
+}
 
 #dish-3 {
   opacity: 0;
+}
+#dish-3 h2 {
+  opacity: 1;
 }
 
 #dish-1 {

@@ -135,11 +135,14 @@ p{
 @for $i from 1 through 3 {
         
     #dish-#{$i}{
-      
        opacity:0;
-       
+       h2{
+        opacity:1;
+       }
     }
-}
+
+
+
 
 @for $i from 1 through 3 {
         
@@ -150,6 +153,6 @@ p{
     
   }
      
-  
+}
 
   
