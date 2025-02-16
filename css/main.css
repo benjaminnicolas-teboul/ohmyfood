@@ -34,12 +34,33 @@
   #functioning .button {
     width: 100%;
   }
+  #dish-1 {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #dish-2 {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #dish-3 {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
   #menu {
     width: 80%;
     margin: 0 auto;
   }
   #menu .menu-card .card {
     width: 500px;
+  }
+  h1 {
+    text-align: center;
   }
 }
 @media (min-width: 1000px) {
@@ -100,24 +121,6 @@
     -o-object-fit: cover;
        object-fit: cover;
   }
-  #dish-1 {
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #dish-2 {
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  #dish-3 {
-    width: -moz-fit-content;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-  }
   #menu i {
     top: 73px;
     right: 248px;
@@ -129,9 +132,6 @@
   }
   #menu .menu-card .card {
     width: 700px;
-  }
-  #menu h1 {
-    text-align: center;
   }
   #menu .title-underscored {
     width: 4%;
@@ -504,7 +504,7 @@ main {
 
 #menu i {
   top: 74px;
-  right: 40px;
+  right: 95px;
   font-size: 27px;
 }
 
@@ -519,7 +519,7 @@ main {
 #menu h2 {
   padding-top: 25px;
   font-weight: normal;
-  font-size: 21px;
+  font-size: 17px;
 }
 #menu h1 {
   margin-top: 35px;

@@ -45,6 +45,12 @@
       } 
         
     }
+    @for $i from 1 through 3 {
+        
+        #dish-#{$i}{
+           @include align-dish-center;
+        }
+    }
     #menu {
          width: 80%;
          margin: 0 auto;
@@ -53,7 +59,9 @@
                 width: 500px;
             }
         }
-
+        h1{
+            text-align: center;
+        }
 }
 
 @media (min-width: $minwidth-desktop) {
@@ -118,12 +126,7 @@
             height: 383px;
             object-fit: cover;
           }
-          @for $i from 1 through 3 {
-        
-            #dish-#{$i}{
-               @include align-dish-center;
-            }
-        }
+      
         #menu i{
             top: 73px;
             right: 248px;
@@ -138,9 +141,7 @@
         }
        
     }
-    h1{
-        text-align: center;
-    }
+    
 
         .title-underscored {
             width: 4%;
