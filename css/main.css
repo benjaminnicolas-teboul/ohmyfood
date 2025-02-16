@@ -8,7 +8,7 @@
     align-items: center;
   }
   #restaurants .card {
-    width: 400px;
+    width: 380px;
   }
   #main-header i {
     top: 130px;
@@ -35,7 +35,7 @@
     width: 100%;
   }
   #menu {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
   }
   #menu .menu-card .card {
