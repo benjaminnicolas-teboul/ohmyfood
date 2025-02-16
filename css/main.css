@@ -1,5 +1,49 @@
 @media (min-width: 600px) {
   body .main-container {
+    max-width: 999px;
+  }
+  #restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #restaurants .card {
+    width: 400px;
+  }
+  #main-header i {
+    top: 130px;
+  }
+  #main-footer h2 {
+    margin: 0;
+    font-size: 22px;
+    margin-top: 6px;
+    margin-left: 35px;
+  }
+  #main-footer nav {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #main-footer nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+  #main-footer nav ul li {
+    margin-right: 25px;
+  }
+  #functioning .button {
+    width: 100%;
+  }
+  #menu {
+    width: 60%;
+    margin: 0 auto;
+  }
+  #menu .menu-card .card {
+    width: 500px;
+  }
+}
+@media (min-width: 1000px) {
+  body .main-container {
     max-width: 1440px;
   }
   #main-header img {
@@ -7,6 +51,7 @@
   }
   #main-header i {
     left: 280px;
+    top: 85px;
   }
   #secundary-header img {
     width: 14%;
@@ -26,8 +71,12 @@
   #functioning h2 {
     margin-left: 170px;
   }
+  #functioning .button {
+    width: 335px;
+  }
   #functioning ul {
     display: flex;
+    flex-direction: row;
     gap: 25px;
     justify-content: center;
     width: 100%;
@@ -69,7 +118,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  main #menu i {
+  #menu i {
     top: 73px;
     right: 248px;
     font-size: 25px;
@@ -91,24 +140,6 @@
     top: 73px;
     right: 248px;
     font-size: 25px;
-  }
-  #main-footer h2 {
-    margin: 0;
-    font-size: 22px;
-    margin-top: 6px;
-    margin-left: 35px;
-  }
-  #main-footer nav {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  #main-footer nav ul {
-    display: flex;
-    justify-content: flex-end;
-  }
-  #main-footer nav ul li {
-    margin-right: 25px;
   }
   section .button_smaller {
     margin-top: 40px;
@@ -224,6 +255,18 @@ main {
   width: 195px;
 }
 
+.icon::before {
+  display: inline-block;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.iconmobile::before {
+  font: var(--fa-font-solid);
+  content: f3cd;
+  color: #EAEAEA;
+  font-size: 22px;
+}
 
 .rectangle {
   background-color: #99E2D0;

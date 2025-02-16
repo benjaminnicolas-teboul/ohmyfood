@@ -5,7 +5,7 @@ $secundary-font:"Roboto", serif;
 $myWidth: 375px;
 $myFontSize: 17px;
 $maxwidth-desktop: 1440px;
-$minwidth-desktop:600px;
-
-
+$minwidth-desktop:1000px;
+$maxwidth-tablet:($minwidth-desktop)-1;
+$minwidth-tablet:600px;
  

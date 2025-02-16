@@ -1,6 +1,61 @@
 @use "variables" as *;
 @use "mixins" as *;
 
+@media (min-width: $minwidth-tablet) {
+    body .main-container {
+        max-width: $maxwidth-tablet;
+    }
+    #restaurants{
+        display: flex;
+  flex-direction: column;
+  align-items: center;
+        .card{
+            width:400px;
+        }
+    }
+    #main-header i {
+        top: 130px;
+        
+      }
+        #main-footer{
+        
+        h2 {
+            margin: 0;
+            font-size: 22px;
+            margin-top: 6px;
+            margin-left:35px;
+          }
+        nav{
+            margin-top: 30px;
+            ul{
+                display: flex;
+                justify-content:flex-end;
+                li{
+                    margin-right: 25px;
+                }
+            }
+            display:flex;
+            flex-direction: row-reverse;
+       
+        }
+    }
+    #functioning{
+      .button{
+        width:100%;
+      } 
+        
+    }
+    #menu {
+         width: 60%;
+         margin: 0 auto;
+        
+        .menu-card .card {
+                width: 500px;
+            }
+        }
+
+}
+
 @media (min-width: $minwidth-desktop) {
     body .main-container {
         max-width: $maxwidth-desktop;
@@ -8,7 +63,8 @@
 
     #main-header {
         @include img-header-setup-destop;
-        i{left: 280px;}
+        i{left: 280px;
+            top: 85px;}
     }
     #secundary-header {
         @include img-header-setup-destop;
@@ -26,11 +82,15 @@
         h2{
             margin-left: 170px;
         }
+        .button{
+            width: 335px;
+          } 
         display: flex;
         flex-direction: column;
-         align-items: flex-start;;
+         align-items: flex-start;
         ul {
             display: flex;
+            flex-direction: row;
             gap: 25px;
             justify-content: center;
             width: 100%;
@@ -64,7 +124,7 @@
                @include align-dish-center;
             }
         }
-        main #menu i{
+        #menu i{
             top: 73px;
             right: 248px;
             font-size:25px;
@@ -91,28 +151,7 @@
             font-size:25px;
           }
     }
-    #main-footer{
-        
-        h2 {
-            margin: 0;
-            font-size: 22px;
-            margin-top: 6px;
-            margin-left:35px;
-          }
-        nav{
-            margin-top: 30px;
-            ul{
-                display: flex;
-                justify-content:flex-end;
-                li{
-                    margin-right: 25px;
-                }
-            }
-            display:flex;
-            flex-direction: row-reverse;
-       
-        }
-    }
+
     section{
     .button_smaller{
         margin-top: 40px;
